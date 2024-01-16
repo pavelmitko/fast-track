@@ -5,6 +5,7 @@ framework:
     annotations: false
     http_method_override: false
     handle_all_throwables: true
+    ide: 'jetbrains://phpstorm/navigate/reference?project=ws-january-2024&path=%%f:%%l'
 
     # Enables session support. Note that the session will ONLY be started if you read or write from it.
     # Remove or comment this section to explicitly disable session support.
@@ -22,4 +23,7 @@ when@test:
     framework:
         test: true
         session:
-            storage_factory_id: session.storage.factory.mock_file
+            handler_id: '%env(resolve:DATABASE_URL)%'
+            cookie_secure: auto
+            cookie_samesite: lax
+            storage_factory_id: session.storage.factory.native
