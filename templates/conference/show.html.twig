@@ -23,4 +23,7 @@
     {% else %}
         <div>No comments have been posted yet for this conference.</div>
     {% endif %}
+    <h2>Add your own feedback</h2>
+    {% form_theme form 'form_table_layout.html.twig' %}
+    {{ form(form) }}
 {% endblock %}
