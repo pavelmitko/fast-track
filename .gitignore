@@ -26,3 +26,6 @@
 
 #.idea
 /.idea/*
+
+phpunit.xml
+.phpunit.result.cache
