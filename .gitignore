@@ -27,5 +27,5 @@
 #.idea
 /.idea/*
 
-phpunit.xml
-.phpunit.result.cache
+/.php_version
+/compose.override.yaml
