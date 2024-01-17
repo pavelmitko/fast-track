@@ -27,5 +27,6 @@
 #.idea
 /.idea/*
 
-/.php_version
+/.php-version
 /compose.override.yaml
+/.symfony.local.yaml

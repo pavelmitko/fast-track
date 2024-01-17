@@ -25,7 +25,6 @@ class ConferenceController extends AbstractController
         private readonly MessageBusInterface $bus,
     )
     {
-
     }
 
     #[Route('/', name: 'home')]
